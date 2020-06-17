@@ -1,6 +1,6 @@
 package pl.companycar.model;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
     private String firstName;
     private String lastName;
     private String documentId;
@@ -48,5 +48,10 @@ public class Employee {
     @Override
     public String toString() {
         return firstName + ";"+lastName + ";"+documentId + ";"+level;
+    }
+
+    @Override
+    public int compareTo(Employee o) {
+        return firstName.compareToIgnoreCase(o.getFirstName());
     }
 }

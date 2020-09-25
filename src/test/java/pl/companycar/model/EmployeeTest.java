@@ -26,7 +26,7 @@ public class EmployeeTest {
     }
 
     @Test
-    public void testCoparatorSort(){
+    public void testComparatorSort(){
         //is
             Arrays.sort(emp);
         //then
